@@ -33,11 +33,10 @@ Ensure you have your .swf files in the `original` directory, for example if you'
         └── ...
 ```
 
-Note: If you are exporting from U.B. Funkeys, it will take a long time to export all the content (it took roughly an hour for me to export all scripts), as there are many SWF files. I recommend only exporting the content you need from the .swf files you need it from, unless you're willing to wait that long.
+Note: If you are exporting from U.B. Funkeys, it will take a long time to export all the content (it took roughly an hour for me to export all scripts). I recommend only exporting the content you need from the `.swf` files you need it from. Certain files, like the funkeys themselves, are mainly there for the animation frames.
 
-Then you can run the following command to export the content from the SWF files:
 
-You can get a list of available export types by running:
+You can then get a list of available export types by running:
 
 ```sh
 # If installed globally
@@ -56,5 +55,3 @@ swf-patcher export <type>
 # If running from repository
 cargo run -- export <type>
 ```
-
-So running the program with `export script` will export all the scripts from the SWF files in the `original` directory to the `assets` directory.
